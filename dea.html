@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="dea.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Dea <i class="fa-solid fa-heart"></i></strong>
+                        <p>
+                            Sayang Dea!!, Bimo bener-bener minta maaf atas kesalahan Bimo, pleaseee bangett jangan diamin Bimo, Bimo gakuat dicuekin Dea, 
+                            ternyata begini rasanya dicuekin pacar yang sangat kita sayangi <i class="fa-solid fa-face-sad-tear"></i><br>
+                            Love u so much babe <i class="fa-solid fa-heart"></i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+
+</html>
